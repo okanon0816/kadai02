@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h1 class="main_message">Let's decide on lunch!</h1> -->
+    <div class="wrapper">
+        <div class="loader">
+            <img src="img/ピカチュウ.gif" alt="">
+        </div>
+
+        <div class="container">
+            <div class="kind">
+                <h2>なにタイプ がすき？</h2>
+                <div class="button_wrapper">
+                    <button type="button" class="btn" id="wa"><img src="img/フシギダネ.png" class="icon">わしょく タイプ</button>
+                    <button type="button" class="btn" id="you"><img src="img/ゼニガメ.png" class="icon">ようしょく タイプ</button>
+                    <button type="button" class="btn" id="cyu"><img src="img/ヒトカゲ.png" class="icon">ちゅうか タイプ</button>
+                </div>
+            </div>
+
+            <div>
+                <h2>どこで たべる？</h2>
+                <div class="button_wrapper">
+                    <button type="button" class="btn" id="ie"><img src="img/ctr1.png" class="icon">おうち で！</button>
+                    <button type="button" class="btn" id="soto">コウトウシティ で！<img src="img/ctr2.png" class="icon"></button>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn_done" id="lunchBtn"><img src="img/サトシ.png" class="icon satoshi">ランチを きめるぞ！</button>
+
+
+        <div>
+            <h2>きょうのランチは <span id="lunchMessage"> キミ </span> にきめた！<img src="img/モンボ.png" class="icon"></h2>   
+        </div>  
+
+        <div id="movArea">
+            <iframe id="mov" class="mov" width="560" height="315" src="https://www.youtube.com/embed/OL8o03u8l2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="imgArea"></div>     
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
